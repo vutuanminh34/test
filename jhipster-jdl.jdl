@@ -1,0 +1,36 @@
+
+entity Officers {
+	fullName String,
+    gender String,
+    yearOfBirth Integer,
+    address String
+}
+
+entity Worker{
+	Officers Object,
+    level Integer
+}
+
+entity Employee{
+	Officers Object,
+    job String
+}
+
+entity Engineer{
+	Officers Object,
+    major String
+}
+
+relationship OneToMany {
+	Officers to Worker
+}
+
+relationship OneToMany {
+	Officers to Employee
+}
+
+relationship OneToMany {
+	Officers to Engineer
+}
+
+
