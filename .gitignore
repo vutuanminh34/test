@@ -1,0 +1,6 @@
+*.exe
+.git/
+bin/
+obj/
+.vs/
+..
